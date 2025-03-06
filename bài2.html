@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let numbers = [2, 5, 7, 4, 1, 8, 6];
+
+        let userInput = prompt("Nhập một số:");
+
+        let inputNumber = Number(userInput);
+
+        if (numbers.includes(inputNumber)) {
+           console.log("Bingo");
+           alert("Bingo"); 
+        } else {
+           console.log("Chúc bạn may mắn lần sau");
+           alert("Chúc bạn may mắn lần sau"); 
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let userInput = prompt("Nhập dãy số:");
+
+        if (/^\d+$/.test(userInput)) {
+ 
+           let numberArray = userInput.split("").map(Number);
+
+           let maxNumber = Math.max(...numberArray);
+
+           alert(maxNumber + " là số lớn nhất trong dãy số");
+           console.log(maxNumber + " là số lớn nhất trong dãy số");
+        } else {
+
+           alert("Dãy số không hợp lệ");
+           console.log("Dãy số không hợp lệ");
+        }    
+    </script>
+</body>
+</html>
